@@ -133,7 +133,7 @@ class WoocommerceClient
      */
     public function totalResults()
     {
-        return (int)$this->getResponse()->getHeaders()[$this->getHeaderWithCase('X-WP-Total')];
+        return (int)$this->getResponse()->getHeaders()[$this->getHeaderWithCase('X-Wp-Total')];
     }
 
     /**
@@ -143,7 +143,7 @@ class WoocommerceClient
      */
     public function totalPages()
     {
-        return (int)$this->getResponse()->getHeaders()[$this->getHeaderWithCase('X-WP-TotalPages')];
+        return (int)$this->getResponse()->getHeaders()[$this->getHeaderWithCase('X-Wp-TotalPages')];
     }
 
     /**
